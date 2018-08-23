@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -21,7 +24,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li class="site-navigation-current">
-            <a href="hotels.html">Гостиницы</a>
+            <a>Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -29,19 +32,66 @@
     <main class="container">
       <section class="filters">
         <img src="img/filter-background.png" width="1200px" height="800px">
-        <!--Здесь будет фильтр-->
+        <form class="fiiter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+              <ul class="filter-option">
+                <li>
+                  <input type="checkbox" name="pool" id="filter-pool" checked>
+                  <label for="filter-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking place" id="filter-parking place" checked>
+                  <label for="filter-parking place">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wi-fi" id="filter-wi-fi" checked>
+                  <label for="filter-wi-fi">WI-FI</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="hotel" id="fiter-hotel" checked>
+                  <label for="fiter-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" id="fiter-motel" checked>
+                  <label for="fiter-motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartment" id="fiter-apartment" checked>
+                  <label for="fiter-apartment">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <b>Стоимость в сутки (P):</b>
+            <div>
+              <label>
+                От 0 до 3000
+                <input type="range" name="radio"> 
+              </label>
+            </div>
+          <button class="show" type="button">Показать</button>>
+        </form>
       </section>
-      <div class="sorting">
-        <b>НАЙДЕНО:3</b>
-        Сортировка
-        <ul class="sorting-criterion">
-          <li>
-            <a href="#">По цене</a>
-          </li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По рейтингу</a></li>
-        </ul>
-      </div>
+        <div class="sorting">
+          <b>НАЙДЕНО:3</b>
+          Сортировка
+          <ul class="sorting-criterion">
+            <li>
+              <a href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+        </div>
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item-1">
@@ -84,13 +134,13 @@
       <b>#VISITSEDONA</b>
         <ul class="social-networks">
           <li>
-            <a class="social-button1" href="#">Twitter</a>
+            <a class="social-button" href="#">Twitter</a>
           </li>
           <li>
-            <a class="social-button2" href="#">Facebook</a>
+            <a class="social-button" href="#">Facebook</a>
           </li>
           <li>
-            <a class="social-button3" href="#">YouTube</a>
+            <a class="social-button" href="#">YouTube</a>
           </li>         
         </ul>
       <div class="paternity">

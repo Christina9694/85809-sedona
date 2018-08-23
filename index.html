@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -27,6 +30,7 @@
       </nav>
     </header> 
     <main class="container">
+      <img src="img/background-photo.png" width="1200px" height="800px">
       <div class="entry">
         <h1>Cедона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -40,15 +44,15 @@
             <p>Cедона - не аттракцион для туристов, там течет своя жизнь</p>
           </li>
             <ul class="bonuses">
-              <li class="bonuses-1">
+              <li class="bonus">
                 <b>Жилье</b>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="bonuses-2">
+              <li class="bonus">
                 <b>Еда</b>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="bonuses-3">
+              <li class="bonus">
                 <b>Сувениры</b>
                 <p>Не только китайского, но и местного производства</p>
               </li>
@@ -80,10 +84,26 @@
         <div class="search-hotel">
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостниц в Седоне</p>
-          <a class="#" class="button button-find">Поиск гостиницы в Седоне</a>
-        </div>
-        <div class="search form">
-          <!--Форма--->
+          <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="arrival-date">Дата заезда:</label>
+              <input class="form-arrival-date" id="arrival-date" type="text" placeholder="24 апреля 2017">
+            </p>
+            <p>
+              <label for="date-of-departure">Дата выезда</label>
+              <input class="form-date-of-departure" id="date-of-departure" type="text" placeholder="4 июля 2017">
+            </p>
+            <p>
+              <label>Взрослые:</label>
+              <!--не знаю как сделать "-2+"-->
+            </p>
+            <p>
+              <label>Дети:</label>
+              <!--не знаю как сделать "-0+"-->
+            </p>
+            <button class="modal-search" type="submit">Найти</button>
+          </form>
         </div>
         <div class="map">
           <img src="img/map.png" width="1200px" height="593px">
@@ -94,13 +114,13 @@
       <b>#VISITSEDONA</b>
         <ul class="social-networks">
           <li>
-            <a class="social-button1" href="#">Twitter</a>
+            <a class="social-button" href="#">Twitter</a>
           </li>
           <li>
-            <a class="social-button2" href="#">Facebook</a>
+            <a class="social-button" href="#">Facebook</a>
           </li>
           <li>
-            <a class="social-button3" href="#">YouTube</a>
+            <a class="social-button" href="#">YouTube</a>
           </li>         
         </ul>
       <div class="paternity">
