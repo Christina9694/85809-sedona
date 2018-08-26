@@ -34,61 +34,62 @@
         <img src="img/filter-background.png" width="1200px" height="800px">
         <form class="fiiter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <legend>Инфраструктура:</legend>
-              <ul class="filter-option">
+            <legend class="filter-option">Инфраструктура:</legend>
+              <ul class="filter-option-1">
                 <li>
                   <input type="checkbox" name="pool" id="filter-pool" checked>
-                  <label for="filter-pool">Бассейн</label>
+                  <label class="services" for="filter-pool">Бассейн</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="parking place" id="filter-parking place" checked>
-                  <label for="filter-parking place">Парковка</label>
+                  <input type="checkbox" name="parking place" id="filter-parking-place" checked>
+                  <label class="services" for="filter-parking place">Парковка</label>
                 </li>
                 <li>
                   <input type="checkbox" name="wi-fi" id="filter-wi-fi" checked>
-                  <label for="filter-wi-fi">WI-FI</label>
+                  <label class="services" for="filter-wi-fi">WI-FI</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Тип жилья:</legend>
-              <ul>
+              <legend class="filter-name">Тип жилья:</legend>
+              <ul class="filter-name-1">
                 <li>
                   <input type="checkbox" name="hotel" id="fiter-hotel" checked>
-                  <label for="fiter-hotel">Гостиница</label>
+                  <label class="services" for="fiter-hotel">Гостиница</label>
                 </li>
                 <li>
                   <input type="checkbox" name="motel" id="fiter-motel" checked>
-                  <label for="fiter-motel">Мотель</label>
+                  <label class="services" for="fiter-motel">Мотель</label>
                 </li>
                 <li>
                   <input type="checkbox" name="apartment" id="fiter-apartment" checked>
-                  <label for="fiter-apartment">Апартаменты</label>
+                  <label class="services" for="fiter-apartment">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <b>Стоимость в сутки (P):</b>
             <div>
-              <label>
-                От 0 до 3000
-                <input type="range" name="radio"> 
-              </label>
+              <label for="cost-number">От</label>
+              <input class="cost" type="text" id="initial cost" placeholder="0">
+              <label for="cost-number">До</label>
+              <input class="cost" type="text" id="final cost" placeholder="3000">
+              <input type="range" name="radio"> 
             </div>
-          <button class="show" type="button">Показать</button>>
+          <button class="show" type="button">Показать</button>
         </form>
       </section>
         <div class="sorting">
-          <b>НАЙДЕНО:3</b>
-          Сортировка
+          <b class="found">НАЙДЕНО:3</b>
+          <span class="sorting">Сортировка</span>
           <ul class="sorting-criterion">
             <li>
-              <a href="#">По цене</a>
+              <a class="sort-topics-1" href="#">По цене</a>
             </li>
             <li>
-              <a href="#">По типу</a>
+              <a class="sort-topics-2" href="#">По типу</a>
             </li>
             <li>
-              <a href="#">По рейтингу</a>
+              <a class="sort-topics-3" href="#">По рейтингу</a>
             </li>
           </ul>
         </div>
@@ -143,10 +144,9 @@
             <a class="social-button" href="#">YouTube</a>
           </li>         
         </ul>
-      <div class="paternity">
-        WEBSITE BY
+      <div class="paternity">WEBSITE BY
         <b>html academy</b>
       </div> 
     </footer>
- </body>
+  </body>
 </html>
